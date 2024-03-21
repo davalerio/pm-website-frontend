@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top myNavbarBlack myNavbarPadding">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./../../../../assets/img/logoPeruMoney.png" width="100">
+      <a class="d-none d-sm-block d-md-block d-lg-none text-decoration-none mySecondaryColor myLoginFS myLoginRegisterTitlesForMD" href="http://app.perumoney.pe">| Iniciar sesión</a>
+      <a class="d-none d-sm-block d-md-block d-lg-none btn ms-1 fw-bold mySecondaryButton myLoginRegisterTitlesForMD registerButton" href="http://app.perumoney.pe/#/auth/sing-up">Registrarse</a>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-bottom myNavbarBlack myOffcanvasHeight" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x myPrimaryColor" viewBox="0 0 16 16" data-bs-dismiss="offcanvas" aria-label="Close">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+      <div class="offcanvas-body d-lg-none d-xl-none d-xxl-none d-xxl-none"> <!-- d-lg-none d-xl-block d-xxl-block d-xxl-none -->
+        <ul class="navbar-nav justify-content-bottom flex-grow-1 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" data-bs-dismiss="offcanvas" routerLink="/nosotros">Nosotros</a>
+          </li>
+          <li class="myLine"></li>
+          <li class="nav-item">
+            <a class="nav-link text-white" data-bs-dismiss="offcanvas" routerLink="/agencias">Agencias</a>
+          </li>
+          <li class="myLine"></li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#service">Servicios</a>
+          </li>
+          <li class="myLine"></li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#faq">Preguntas frecuentes</a>
+          </li>
+          <li class="myLine"></li>
+          <li class="nav-item my-3">
+            <a type="button" class="btn btn-sm mySecondaryButton fw-bold" href="http://app.perumoney.pe/#/auth/sing-up">Registrarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mySecondaryColor" href="http://app.perumoney.pe">Iniciar sesión</a>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse d-none d-sm-none d-md-none d-lg-block">
+        <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+          <li class="nav-item myLeftBorder">
+            <a class="nav-link myDarkerGrey" routerLink="/nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link myDarkerGrey" routerLink="/agencias">Agencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link myDarkerGrey" href="#service">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link myDarkerGrey" href="#faq">Preguntas frecuentes</a>
+          </li>
+        </ul>
+        <div class="d-flex me-5" role="search">
+          <a class="nav-link mySecondaryColor me-4" href="http://app.perumoney.pe">Iniciar sesión</a>
+          <a type="button" class="btn btn-sm mySecondaryButton fw-bold" href="http://app.perumoney.pe/#/auth/sing-up">Registrarse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,31 @@
+.myContainerBG {
+  // --bs-gutter-x: 0rem;
+  background-color: #EEEEEE;
+}
+
+.divImg {
+  position: relative;
+}
+
+.myTopImg {
+  filter: blur(1px);
+  border-bottom: 4px solid #BFD647;
+}
+
+.textForImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1 !important;
+}
+
+.myInTextImg {
+  width: 200px;
+  height: 200px;
+  border-right: 6px solid #BFD647;
+}
+
+.myTextJustified {
+  text-align: justify;
+}

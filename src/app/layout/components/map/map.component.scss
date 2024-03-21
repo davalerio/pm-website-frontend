@@ -1,0 +1,68 @@
+.myBGImg {
+  background-image: url('../../../../assets/img/mapalm.png');
+  // width: 100%;
+}
+
+.pm-space {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.pm-space2 {
+  margin-top: 100px; 
+  margin-bottom: 100px
+}
+
+.myCardBG {
+  background-color: #eeeeee !important;
+  position: relative;
+}
+
+.myBorderTop {
+  border-top: 0.5rem solid #EA0C73;
+  border-radius: 0.25rem;
+}
+
+.myBorderRight {
+  border-bottom: 0.5rem solid #EA0C73;
+  border-radius: 0.25rem;
+}
+
+.mySelectBorders {
+  border: 3px solid #BFD647;
+}
+
+.mySecondaryColor {
+  &:hover {
+    background-color: #BFD647 !important;
+    border-color: #BFD647 !important;
+    color: #000000 !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+  // and (max-width: 992px)
+  .myCardMD {
+    margin: 0 4rem !important;
+  }
+}
+
+@media (min-width: 99xpx) {
+
+  // and ()
+  .myCardLG {
+    margin: 0 0 !important;
+  }
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+
+

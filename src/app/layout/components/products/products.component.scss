@@ -1,0 +1,47 @@
+.myCarouselTransition {
+  transition: none !important;
+}
+
+.carousel-caption {
+  position: unset;
+  color: #DEDEDE !important;
+  padding-top: 0px !important;
+}
+
+.nav-link {
+  background-color: transparent !important;
+  color: #DEDEDE !important;
+  border-radius: 0px !important;
+
+  // &:focus {
+  //   border-right: 4px solid #BFD647 !important;
+  //   border-bottom: 1px solid #BFD647 !important;
+  // }
+}
+
+.myBorderAndWidth {
+  border-right: 1px solid #BFD647;
+  width: 100%
+}
+
+
+.nav-linkMD {
+  background-color: transparent !important;
+  color: #DEDEDE !important;
+  border-radius: 0px !important;
+
+  &:focus {
+    border-right: 5px solid #BFD647 !important;
+    border-bottom: 1px solid #BFD647 !important;
+  }
+}
+
+.nav-linkXS {
+  background-color: transparent !important;
+  color: #DEDEDE !important;
+  border-radius: 0px !important;
+
+  &:focus {
+    border-bottom: 1px solid #BFD647 !important;
+  }
+}

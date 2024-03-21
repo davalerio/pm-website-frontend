@@ -1,0 +1,54 @@
+.myNavbarBlack {
+  background-color: #1A1A1A !important;
+}
+
+.myNavbarPadding {
+  padding: 0px 0px !important;
+}
+
+.myLine {
+  margin: 10px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #FFF;
+  width: 90%;
+}
+
+.myOffcanvasHeight {
+  height: 65vh;
+}
+
+.myFontSize {
+  font-size: 1.5rem;
+}
+
+.myLoginFS {
+  font-size: 1rem;
+}
+
+.registerButton {
+  --bs-btn-padding-y: 0rem;
+  --bs-btn-padding-x: .3rem;
+  --bs-btn-font-size: .75rem;
+}
+
+.navbar {
+  --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23BFD647' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .myLoginRegisterTitlesForMD {
+    display: inline-flex !important;
+  }
+}
+
+.myLeftBorder {
+  border-left: 1px solid #BFD647;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    margin-left: 3rem;
+  }
+}

@@ -1,0 +1,45 @@
+.myImgFont {
+  font-size: 0.75rem;
+}
+
+.myPrimaryButton {
+  &:hover {
+    background-color: #BFD647 !important;
+    border-color: #BFD647 !important;
+    color: #000000 !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+  // and (max-width: 992px)
+  .myFontSizeSM {
+    font-size: 1.2rem;
+  }
+
+  .myImgWidth {
+    width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  // and (max-width: 992px)
+  .myFontSizeSM {
+    font-size: 2rem;
+  }
+
+  .myImgWidth {
+    width: 300px;
+  }
+
+  .myTopTitle{
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .myTopTitle {
+    font-size: 25px !important;
+  }
+}

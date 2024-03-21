@@ -1,0 +1,39 @@
+.container-fluid {
+  --bs-gutter-x: 0rem;
+  background-color: #EEEEEE
+}
+
+.myRowBG {
+}
+
+.divImg {
+  position: relative;
+}
+
+.myTopImg {
+  // opacity: 0.9;
+  filter: blur(3px);
+  border-bottom: 4px solid #BFD647;
+}
+
+.textForImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1 !important;
+}
+
+.myInTextImg {
+  width: 200px;
+  height: 200px;
+  border-right: 6px solid #BFD647;
+}
+
+.myTextJustified {
+  text-align: justify;
+}
+
+.myWhiteBG {
+  background-color: #FFFFFF;
+}

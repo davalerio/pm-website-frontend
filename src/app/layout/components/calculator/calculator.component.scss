@@ -1,0 +1,228 @@
+// ::ng-deep {
+//   #kt_content_container {
+//     height: 100%;
+
+//   }
+// }
+
+.pm-input-cta {
+  font-size: 20px !important;
+}
+
+.calculator {
+  max-width: 484px;
+  border-radius: 16px;
+
+  .card-body {
+    padding: 30px;
+  }
+
+  .text-time-exchanger {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.97rem;
+  }
+
+  .info-exchanger {
+    background-color: #f7f7f7;
+    border: none;
+    border-bottom: 1px solid #cecece;
+    display: flex;
+    border-radius: 15px;
+    padding: 0.2rem !important;
+    overflow: hidden;
+
+    .separate {
+      border-right: 1px solid #ed277e !important;
+      border-radius: 0px;
+    }
+
+    .btn {
+      border-radius: 12px;
+    }
+
+    * {
+      color: #323232 !important;
+      transition: 0.5s;
+    }
+
+    span {
+      line-height: 16px;
+    }
+
+    .btn-active {
+      background-color: #ed277e;
+
+      * {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .calculator-body {
+    .calculator-field {
+      .input-group-solid {
+        background-color: #fff;
+      }
+
+      input {
+        font-size: 2rem;
+        font-weight: 900;
+        color: #282829;
+      }
+
+      .input-group {
+        border: 1px solid #1A1A1A;
+        padding: 3px;
+        border-radius: 15px;
+      }
+
+      .input-group-text {
+        font-size: 1.3rem;
+        font-weight: 500;
+        background: #DEDEDE;
+        color: #1A1A1A;
+        width: 160px;
+        position: relative;
+        border-radius: 12px !important;
+        display: flex;
+
+        div {
+          text-align: right;
+        }
+
+        small {
+          font-size: 0.9rem;
+          font-weight: 400 !important;
+        }
+
+        .svg-icon {
+          position: absolute;
+          top: -2.2rem;
+          left: -1.7rem;
+          background: #fff;
+          border-radius: 50px;
+          padding: 2px;
+          border: 2px solid #fff;
+          cursor: pointer;
+          box-shadow: 1px 1px 10px #999;
+          z-index: 10;
+        }
+      }
+
+      .input-group-text.country {
+        // background: none !important;
+        // width: 45px;
+        padding: 2px 10px;
+
+        img {
+          width: 35px;
+          border-radius: 50px;
+          margin-right: 10px;
+
+          @media (max-width: 460px) {
+            width: 25px;
+          }
+        }
+
+        @media (max-width: 460px) {
+          width: 130px;
+          font-size: 1rem;
+        }
+      }
+
+
+    }
+
+    .btn {
+      border-radius: 15px;
+    }
+  }
+
+
+  .alert-secondary {
+    background-color: #fdf6f9;
+  }
+
+  .btn-actions {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .btn {
+      font-size: 1.3rem;
+      font-weight: 400;
+      position: absolute;
+      bottom: -55px;
+      min-width: 250px;
+    }
+  }
+}
+
+.card {
+  --bs-card-border-color: none;
+}
+
+.btn-light {
+  --bs-btn-bg: #DEDEDE;
+}
+
+.form-control {
+  border: var(--bs-border-width) solid transparent;
+}
+
+.myPrimaryButton {
+  &:hover {
+    background-color: #BFD647 !important;
+    border-color: #BFD647 !important;
+    color: #000000 !important;
+  }
+}
+
+/*responsive celulares*/
+@media (max-width: 400px) {
+  .myFontSizeXS {
+    font-size: 1rem !important;
+  }
+
+  .mySvgXS {
+    width: 40px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .pm-title-calculator {
+    padding: 10px 10px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #000000;
+  }
+
+  .pm-exchange {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+  }
+
+  .pm-denomination {
+    font-size: 11px;
+    letter-spacing: -0.5px;
+  }
+
+  .pm-content-denomination {
+    width: 100px !important;
+  }
+
+  .pm-button-exchange {
+    width: 60px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .pm-input-cta {
+    font-size: 20px !important;
+  }
+
+  .pm-button-cta {
+    font-size: 15px !important;
+  }
+}

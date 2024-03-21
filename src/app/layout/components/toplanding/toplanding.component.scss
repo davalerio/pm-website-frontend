@@ -1,0 +1,48 @@
+.myCarouselTransition {
+  transition: none !important;
+}
+
+.myLinePrimary {
+  margin: 10px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ea0c73;
+  width: 90%;
+}
+
+.myIbk {
+  &:hover {
+    background-image: url("../../../../assets/img/interbank.png");
+  }
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .myFontSizeSM {
+    font-size: 2rem;
+  }
+}
+
+.myJustifiedText {
+  text-align: justify !important;
+}
+
+.testimg {
+  &:hover {
+    width: 80px;
+    height: 15.2px;
+    background-image: url("../../../../assets/img/interbank.png");
+  }
+}
+
+.img-fluid {
+  padding-left: 10px;
+}
+
+.bank-interbancario {
+  display: flex;
+  align-items: center;
+}

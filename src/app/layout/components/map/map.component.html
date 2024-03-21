@@ -1,0 +1,205 @@
+<!-- XS/SM/MD -->
+<div class="d-block d-sm-block d-md-block d-lg-none py-5 myBGImg">
+  <div class="myBorderTop col-6 offset-3"></div>
+  <div class="card px-5 mx-3 myCardBG myCardMD">
+    <h2 class="my-5 text-center fw-bold">¡Tenemos {{ agency.length }} agencias a nivel nacional!</h2>
+    <!-- <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <label for="" class="form-label fw-bolder">Departamento</label>
+        <select id="filtro2" class="form-select myCardBG mySelectBorders" [(ngModel)]="seleccion">
+          <option [value]="seleccionT">Mostrar todos</option>
+          <option *ngFor="let provinces of province" [value]="provinces.name">{{ provinces.name }}</option>
+        </select>
+      </div>
+    </div> -->
+
+    <div class="row py-5 pm-space">
+      <div id="carouselXSMD" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <p class="fw-bold mb-1">C.C Real Plaza Centro Cívico <a class="myPrimaryColor fw-bold">Ver en Maps</a></p>
+                </div>
+                <div class="row d-flex ">
+                  <div class="col-2 col-sm-1">
+                    <img src="../../../../assets/img/localizador.svg" class="" width="30">
+                  </div>
+                  <div class="col-10 col-sm-11">
+                    <p>Av.Garcilaso de la Vega 1337 Int. 2173 Agencia LC-246, Lima.</p>
+                  </div>
+                </div>
+                <div class="row d-flex ">
+                  <div class="col-2 col-sm-1">
+                    <img src="../../../../assets/img/reloj.svg" class="" width="30">
+                  </div>
+                  <div class="col-10 col-sm-11">
+                    <p>Lunes a Viernes: 9:00 a 19:00, Sábados: 9:00 a 19:00.</p>
+                  </div>
+                </div>
+                <div class="row d-flex ">
+                  <div class="col-2 col-sm-1">
+                    <img src="../../../../assets/img/servicios.svg" class="" width="30">
+                  </div>
+                  <div class="col-10 col-sm-11">
+                    <p class="fw-bold">Cambio de divisas, Pago de servicios, DHL.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" *ngFor="let agencia of agency">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <p class="fw-bold mb-1">CC Real Plaza Centro Cívico <a class="myPrimaryColor fw-bold">Ver en Maps</a></p>
+                </div>
+                <div class="row d-flex ">
+                  <div class="col-2 col-sm-1">
+                    <img src="../../../../assets/img/localizador.svg" class="" width="30">
+                  </div>
+                  <div class="col-10 col-sm-11">
+                    <p>Av.Garcilaso de la Vega 1337 Int. 2173 Agencia LC-246, Lima.</p>
+                  </div>
+                </div>
+                <div class="row d-flex ">
+                  <div class="col-2 col-sm-1">
+                    <img src="../../../../assets/img/reloj.svg" class="" width="30">
+                  </div>
+                  <div class="col-10 col-sm-11">
+                    <p>Lunes a Viernes: 9:00 a 19:00, Sábados: 9:00 a 19:00.</p>
+                  </div>
+                </div>
+                <div class="row d-flex ">
+                  <div class="col-2 col-sm-1">
+                    <img src="../../../../assets/img/servicios.svg" class="" width="30">
+                  </div>
+                  <div class="col-10 col-sm-11">
+                    <p class="fw-bold">Cambio de divisas, Pago de servicios, DHL.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselXSMD" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button> -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselXSMD" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselXSMD" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <button type="button" class="btn btn-dark mb-5 fw-semibold mySecondaryColor myBlackBG" [routerLink]="'/agencias'">Ver todas</button>
+  </div>
+</div>
+<!-- XS/SM/MD -->
+
+<!-- LG -->
+<div class="d-block d-none d-lg-block py-5 myBGImg">
+  <div class="col-7">
+    <div class="card px-5 myCardBG myCardMD myCardLG pm-space2">
+      <h2 class="my-5 text-center fw-bold">¡Tenemos {{ agency.length }} agencias a nivel nacional!</h2>
+      <!-- <div class="row p-5">
+        <div class="col-xs-12 col-sm-8">
+          <label for="" class="form-label fw-bold">Ubícanos en los siguientes Centros Comerciales</label>
+          <select id="filtro1" class="form-select myCardBG mySelectBorders" [(ngModel)]="seleccion">
+            <option [value]="seleccionT">Mostrar todos</option>
+            <option *ngFor="let provinces of province" [value]="provinces.name">{{ provinces.name }}</option>
+          </select>
+        </div>
+      </div> -->
+      <div class="row p-5">
+        <div id="carouselLG" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="card-body">
+                  <div class="text-center">
+                    <p class="fw-bold mb-1">CC. Real Plaza Centro Civico <a class="myPrimaryColor fw-bold">Ver en Maps</a></p>
+                  </div>
+                  <div class="row d-flex ">
+                    <div class="col-2 col-sm-1">
+                      <img src="../../../../assets/img/localizador.svg" class="" width="30">
+                    </div>
+                    <div class="col-10 col-sm-11">
+                      <p>Av.Garcilaso de la Vega 1337 Int. 2173 Agencia LC-246, Lima.</p>
+                    </div>
+                  </div>
+                  <div class="row d-flex ">
+                    <div class="col-2 col-sm-1">
+                      <img src="../../../../assets/img/reloj.svg" class="" width="30">
+                    </div>
+                    <div class="col-10 col-sm-11">
+                      <p>Lunes a Viernes: 9:00 a 19:00, Sábados: 9:00 a 19:00.</p>
+                    </div>
+                  </div>
+                  <div class="row d-flex ">
+                    <div class="col-2 col-sm-1">
+                      <img src="../../../../assets/img/servicios.svg" class="" width="30">
+                    </div>
+                    <div class="col-10 col-sm-11">
+                      <p class="fw-bold">Cambio de divisas, Pago de servicios, DHL.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" *ngFor="let agencia of agency">
+              <div class="card">
+                <div class="card-body">
+                  <div class="text-center">
+                    <p class="fw-bold mb-1">{{ agencia.name }} <a class="myPrimaryColor fw-bold" href="{{ agencia.url }}">Ver en Maps</a></p>
+                  </div>
+                  <div class="row d-flex ">
+                    <div class="col-2 col-sm-1">
+                      <img src="../../../../assets/img/localizador.svg" class="" width="30">
+                    </div>
+                    <div class="col-10 col-sm-11">
+                      <p>{{ agencia.address }}</p>
+                    </div>
+                  </div>
+                  <div class="row d-flex ">
+                    <div class="col-2 col-sm-1">
+                      <img src="../../../../assets/img/reloj.svg" class="" width="30">
+                    </div>
+                    <div class="col-10 col-sm-11">
+                      <p>{{ agencia.businessHour }}</p>
+                    </div>
+                  </div>
+                  <div class="row d-flex ">
+                    <div class="col-2 col-sm-1">
+                      <img src="../../../../assets/img/servicios.svg" class="" width="30">
+                    </div>
+                    <div class="col-10 col-sm-11">
+                      <p class="fw-bold">{{ agencia.service }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselLG" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselLG" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-2 offset-5">
+        <button type="button" class="btn btn-dark mb-5 fw-semibold mySecondaryColor myBlackBG" [routerLink]="'/agencias'">Ver todas</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- LG -->
