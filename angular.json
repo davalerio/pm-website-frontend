@@ -21,7 +21,7 @@
               "rxjs-compat",
               "lodash"
             ],
-            "outputPath": "dist/public_html",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
