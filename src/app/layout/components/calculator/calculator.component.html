@@ -6,39 +6,24 @@
       <div class="border border-dark border-3 rounded-3 w-75"></div>
       <div class="">
         <!--begin::Title-->
-        <p
-          class="text-dark text-center mt-5 fw-bold h6"
-          class="pm-title-calculator"
-        >
+        <p class="text-dark text-center mt-5 fw-bold h6" class="pm-title-calculator">
           <!-- Nuestras operaciones están supervisadas por la SBS -->
         </p>
         <p style="color: #000; font-size: 14px">Tipo de cambio de hoy</p>
-        <div
-          class="nav-group nav-group-outline mx-auto info-exchanger border border-1 border-dark"
-        >
-          <a
-            class="btn btn-color-gray-400 w-50 px-4 py-3"
-            [ngClass]="{ 'btn-active': form.get('operation')?.value == 'buy' }"
-            (click)="changeOperation('buy')"
-          >
+        <div class="nav-group nav-group-outline mx-auto info-exchanger border border-1 border-dark">
+          <a class="btn btn-color-gray-400 w-50 px-4 py-3"
+            [ngClass]="{ 'btn-active': form.get('operation')?.value == 'buy' }" (click)="changeOperation('buy')">
             <span class="d-block text-center">
-              <span
-                class="fs-md-2 fw-bolder text-gray-800 counted text-nowrap pm-exchange"
-              >
+              <span class="fs-md-2 fw-bolder text-gray-800 counted text-nowrap pm-exchange">
                 Compra: {{ exchangeRate.rate_buy | number : "1.4-4" }}
                 <!-- Compra: 3.55 -->
               </span>
             </span>
           </a>
-          <a
-            class="btn btn-color-gray-400 w-50 px-4 py-3"
-            [ngClass]="{ 'btn-active': form.get('operation')?.value == 'sale' }"
-            (click)="changeOperation('sale')"
-          >
+          <a class="btn btn-color-gray-400 w-50 px-4 py-3"
+            [ngClass]="{ 'btn-active': form.get('operation')?.value == 'sale' }" (click)="changeOperation('sale')">
             <span class="d-block text-center">
-              <span
-                class="fs-md-2 fw-bolder text-gray-800 counted text-nowrap pm-exchange"
-              >
+              <span class="fs-md-2 fw-bolder text-gray-800 counted text-nowrap pm-exchange">
                 Venta: {{ exchangeRate.rate_sale | number : "1.4-4" }}
                 <!-- Venta: 3.44 -->
               </span>
@@ -47,82 +32,43 @@
         </div>
         <div class="d-flex flex-row calculator-body mt-4">
           <div class="calculator-field row mx-0">
-            <div
-              class="input-group input-group-solid mb-3 order-{{
+            <div class="input-group input-group-solid mb-3 order-{{
                 form.get('operation')?.value == 'buy' ? '2' : '1'
-              }}"
-              matFormField
-            >
+              }}" matFormField>
               <span class="input-group-text country pm-content-denomination">
-                <img
-                  src="../../../../assets/img/peru.svg"
-                  alt="../../../../assets/img/peru.svg"
-                />
+                <img src="assets/icons/calculator/peru.svg" alt="assets/img/peru.svg" />
                 <span class="pm-denomination">Soles:</span>
               </span>
-              <input
-                formControlName="amount_local"
-                type="number"
-                class="form-control py-1 myFontSizeXS pm-input-cta"
-                placeholder="0.00"
-                (keyup)="calculate('amount_local')"
-              />
+              <input formControlName="amount_local" type="number" class="form-control py-1 myFontSizeXS pm-input-cta"
+                placeholder="0.00" (keyup)="calculate('amount_local')" />
             </div>
-            <div
-              class="input-group input-group-solid mb-3 order-{{
+            <div class="input-group input-group-solid mb-3 order-{{
                 form.get('operation')?.value == 'sale' ? '2' : '1'
-              }}"
-              matFormField
-            >
-              <span
-                class="input-group-text country pe-5 pm-content-denomination"
-              >
-                <img
-                  src="../../../../assets/img/united-states.svg"
-                  alt="../../../../assets/img/united-states.svg"
-                />
+              }}" matFormField>
+              <span class="input-group-text country pe-5 pm-content-denomination">
+                <img src="assets/icons/calculator/united-states.svg" alt="assets/img/united-states.svg" />
                 <span class="pm-denomination">Dolares:</span>
               </span>
-              <input
-                formControlName="amount_foreign"
-                type="number"
-                class="form-control py-1 myFontSizeXS pm-input-cta"
-                placeholder="0.00"
-                (keyup)="calculate('amount_foreign')"
-              />
+              <input formControlName="amount_foreign" type="number" class="form-control py-1 myFontSizeXS pm-input-cta"
+                placeholder="0.00" (keyup)="calculate('amount_foreign')" />
             </div>
           </div>
-          <button
-            (click)="changeOperation()"
-            class="btn btn-light btn-lg bnt-block ms-3 mb-3 px-4 pm-button-exchange"
-          >
-            <span
-              class="svg-icon svg-icon-3x svg-icon-sm-5x svg-icon-dark pm-flecha"
-            >
-              <svg-icon
-                src="../../../../assets/img/flechas-calculadora.svg"
-                class="d-none d-lg-block"
-                [svgStyle]="{ 'width.px': 70, fill: 'rgb(0,0,0)' }"
-              ></svg-icon>
-              <svg-icon
-                src="../../../../assets/img/flechas-calculadora.svg"
-                class="d-lg-none"
-                [svgStyle]="{
+          <button (click)="changeOperation()" class="btn btn-light btn-lg bnt-block ms-3 mb-3 px-4 pm-button-exchange">
+            <span class="svg-icon svg-icon-3x svg-icon-sm-5x svg-icon-dark pm-flecha">
+              <svg-icon src="assets/icons/calculator/flechas-calculadora.svg" class="d-none d-lg-block"
+                [svgStyle]="{ 'width.px': 70, fill: 'rgb(0,0,0)' }"></svg-icon>
+              <svg-icon src="assets/icons/calculator/flechas-calculadora.svg" class="d-lg-none" [svgStyle]="{
                   'width.px': 30,
                   fill: 'rgb(0,0,0)',
                   'margin-left': '-8px'
-                }"
-              ></svg-icon>
+                }"></svg-icon>
               <!-- <svg-icon src="/assets/media/svg/flechas-calculadora.svg"></svg-icon> -->
             </span>
           </button>
         </div>
         <div class="text-center btn-actions">
-          <a
-            (click)="onSubmit()"
-            class="btn btn-lg myPrimaryButton text-white fw-bolder pm-button-cta"
-            href="http://app.perumoney.pe"
-          >
+          <a (click)="onSubmit()" class="btn btn-lg myPrimaryButton text-white fw-bolder pm-button-cta"
+            href="http://app.perumoney.pe">
             Iniciar transacción
           </a>
         </div>

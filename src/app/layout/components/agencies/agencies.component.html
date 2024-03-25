@@ -1,19 +1,19 @@
-<div class="container-fluid	 text-center myPadding myDarkerGrey" style="padding-bottom: 100px;"> <!-- d-block d-sm-block d-md-none -->
+<div class="container-fluid	 text-center myPadding myDarkerGrey" style="padding-bottom: 100px;">
+  <!-- d-block d-sm-block d-md-none -->
   <div class="divImg">
-    <img class="img-fluid rounded-bottom-5 d-block d-sm-none myTopImg" src="../../../../assets/img/planetatransacciones.jpg">
-    <img class="img-fluid rounded-bottom-5 d-none d-sm-block myTopImg" src="../../../../assets/img/planetatransaccionesMD.jpg">
+    <img class="img-fluid rounded-bottom-5 d-block d-sm-none myTopImg"
+      src="assets/images/agency/planetatransacciones.jpg">
+    <img class="img-fluid rounded-bottom-5 d-none d-sm-block myTopImg"
+      src="assets/images/agency/planetatransaccionesMD.jpg">
     <div class="textForImg mySecondaryColor">
       <h2>Tenemos {{ agency.length }} agencias a nivel nacional</h2>
     </div>
   </div>
   <div class="row mt-4 mx-2 myBlackC">
     <div class="col-lg-4 col-xs-4 container">
-      <h1 style="font-size: 18px; font-weight: bold; letter-spacing: -0.5px;">Ubícanos en los siguientes Centros Comerciales</h1>
-      <select 
-      id="departamento"
-      class="form-select myCardBG mySelectBorders"
-      [(ngModel)]="seleccion" 
-      >
+      <h1 style="font-size: 18px; font-weight: bold; letter-spacing: -0.5px;">Ubícanos en los siguientes Centros
+        Comerciales</h1>
+      <select id="departamento" class="form-select myCardBG mySelectBorders" [(ngModel)]="seleccion">
         <option [value]="seleccionT">Mostrar todos</option>
         <option *ngFor="let provinces of province" [value]="provinces.name">
           {{ provinces.name }}
@@ -64,11 +64,12 @@
       <div class="card" style="margin: 5px" *ngIf="seleccion === agencia.name && agencia.state == 1">
         <div class="card-body">
           <div class="text-center">
-            <p class="fw-bold mb-1">{{ agencia.name }} <a class="myPrimaryColor fw-bold" href="{{ agencia.url }}">Ver en Maps</a></p>
+            <p class="fw-bold mb-1">{{ agencia.name }} <a class="myPrimaryColor fw-bold" href="{{ agencia.url }}">Ver en
+                Maps</a></p>
           </div>
           <div class="row d-flex ">
             <div class="col-2 col-sm-1">
-              <img src="../../../../assets/img/localizador.svg" class="" width="30">
+              <img src="assets/icons/agency/localizador.svg" class="" width="30">
             </div>
             <div class="col-10 col-sm-11">
               <p>{{ agencia.address }}</p>
@@ -76,7 +77,7 @@
           </div>
           <div class="row d-flex ">
             <div class="col-2 col-sm-1">
-              <img src="../../../../assets/img/reloj.svg" class="" width="30">
+              <img src="assets/icons/agency/reloj.svg" class="" width="30">
             </div>
             <div class="col-10 col-sm-11">
               <p>{{ agencia.businessHour }}</p>
@@ -84,7 +85,7 @@
           </div>
           <div class="row d-flex ">
             <div class="col-2 col-sm-1">
-              <img src="../../../../assets/img/servicios.svg" class="" width="30">
+              <img src="assets/icons/agency/servicios.svg" class="" width="30">
             </div>
             <div class="col-10 col-sm-11">
               <p class="fw-bold">{{ agencia.service }}</p>
@@ -99,11 +100,12 @@
       <div class="card" style="margin: 5px" *ngIf="seleccion === 'All'">
         <div class="card-body">
           <div class="text-center">
-            <p class="fw-bold mb-1">{{ agencia.name }} <a class="myPrimaryColor fw-bold" href="{{ agencia.url }}">Ver en Maps</a></p>
+            <p class="fw-bold mb-1">{{ agencia.name }} <a class="myPrimaryColor fw-bold" href="{{ agencia.url }}">Ver en
+                Maps</a></p>
           </div>
           <div class="row d-flex ">
             <div class="col-2 col-sm-1">
-              <img src="../../../../assets/img/localizador.svg" class="" width="30">
+              <img src="assets/icons/agency/localizador.svg" class="" width="30">
             </div>
             <div class="col-10 col-sm-11">
               <p>{{ agencia.address }}</p>
@@ -111,7 +113,7 @@
           </div>
           <div class="row d-flex ">
             <div class="col-2 col-sm-1">
-              <img src="../../../../assets/img/reloj.svg" class="" width="30">
+              <img src="assets/icons/agency/reloj.svg" class="" width="30">
             </div>
             <div class="col-10 col-sm-11">
               <p>{{ agencia.businessHour }}</p>
@@ -119,7 +121,7 @@
           </div>
           <div class="row d-flex ">
             <div class="col-2 col-sm-1">
-              <img src="../../../../assets/img/servicios.svg" class="" width="30">
+              <img src="assets/icons/agency/servicios.svg" class="" width="30">
             </div>
             <div class="col-10 col-sm-11">
               <p class="fw-bold">{{ agencia.service }}</p>
