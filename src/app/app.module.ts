@@ -12,12 +12,14 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { LinkComponentComponent } from './layout/components/link-component/link-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    LinkComponentComponent
   ],
   imports: [
     BrowserModule,
