@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Firestore, collectionData, collection, query, orderBy } from '@angular/fire/firestore';
+import { Firestore, collectionData, query, orderBy } from '@angular/fire/firestore';
+import { collection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { ExchangeRateModel } from '../_models/exchange-rate.models';
